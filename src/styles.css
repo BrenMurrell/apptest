@@ -67,9 +67,16 @@ a {
 }
 
 .home {
-    height: 95vh;
+    height: 100vh;
     background-color: #333;
+    background-color: #ff8000;
     color: #fff;
+}
+
+.home .intro__links a {
+    text-decoration: none;
+    color: #ff8000;
+    background-color: #fff;
 }
 
 .home h1,
