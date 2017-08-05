@@ -12,7 +12,7 @@ import { ProjectService } from './project.service';
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[];
-  //selectedProject = Project;
+  selectedProject = Project;
   constructor(
     private ProjectService: ProjectService,
     private router: Router
