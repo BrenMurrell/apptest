@@ -7,12 +7,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { IntroComponent } from './intro.component';
+import { ProjectsComponent } from './projects.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'intro',  component: IntroComponent },
   { path: 'home',  component: HomeComponent },
-  
+  { path: 'projects',  component: ProjectsComponent },
+
 //   { path: 'detail/:id', component: HeroDetailComponent },
 //   { path: 'heroes',     component: HeroesComponent }
 ];

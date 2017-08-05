@@ -1,0 +1,40 @@
+
+.projects {
+  background-color: #222;
+  color: white;
+}
+.projects__inner {
+  max-width: 1200px;
+}
+.projects__header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.projects__list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.project__thumb {
+  flex: 1;
+  margin: 0;
+  flex-basis: 50%;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+
+}
+.project__thumb a {
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  color: inherit;
+}
+.project__thumb h2 {
+  font-size: 2em;
+  margin-bottom: 0.4em;
+}
+.project__thumb img {
+  max-width: 100%;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}

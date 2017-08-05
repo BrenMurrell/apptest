@@ -1,0 +1,24 @@
+<section class="projects">
+  <div class="section__inner projects__inner">
+    <div class="projects__header">
+      <h1>Projects</h1>
+      <p>I've worked on a plethora of amazing projects during my time as both a
+        Front End Developer for NV Interactive and as a PHP &amp; WordPress developer for Mogul Limited.
+        Here's a selection of some of my favourite sites...
+    </div>
+    <div class="projects__list">
+        <div *ngFor="let project  of projects" class="project__thumb">
+          <a href="{{project.url}}" target="_blank">
+            <h2>{{project.name}}</h2>
+            <img src='assets/{{project.thumbnail}}' />
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- <div *ngIf="selectedHero">
+    <h2>
+        {{selectedHero.name | uppercase}} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div> -->
