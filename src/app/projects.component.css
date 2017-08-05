@@ -10,6 +10,7 @@
   max-width: 800px;
   margin: 0 auto;
 }
+.projects__header h1 { margin-bottom: 0.4em; }
 .projects__list {
   display: flex;
   flex-flow: row wrap;
