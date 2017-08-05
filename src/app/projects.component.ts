@@ -6,13 +6,13 @@ import { ProjectService } from './project.service';
 
 @Component({
   selector: 'my-projects',
-  templateUrl: '/projects.component.html',
+  templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
   providers: [ProjectService]
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[];
-  selectedProject = Project;
+  //selectedProject = Project;
   constructor(
     private ProjectService: ProjectService,
     private router: Router
