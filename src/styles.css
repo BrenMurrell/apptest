@@ -43,7 +43,14 @@ h1 {
 h2 {
     font-size: 60px;
 }
-
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 66px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
 p {
     font-family: 'Raleway', sans-serif;
     margin-top: 0;

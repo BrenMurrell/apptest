@@ -17,11 +17,15 @@
 .project__thumb {
   flex: 1;
   margin: 0;
-  flex-basis: 50%;
   margin-bottom: 1em;
   padding: 1em;
   box-sizing: border-box;
-
+  flex-basis: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .project__thumb {
+    flex-basis: 40%;
+  }
 }
 .project__thumb a {
   text-decoration: none;
