@@ -3,4 +3,8 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './intro.component.html',
 })
-export class IntroComponent { }
+export class IntroComponent { 
+  test(): void {
+    
+  }
+}
