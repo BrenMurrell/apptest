@@ -126,14 +126,14 @@ a {
     line-height: 3rem;
     transition-property: all;
     transition-duration: 0.4s;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transform: translateY(0px) scale3d(1, 1, 1);
 }
 
 .intro__links a:hover {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
     background-color: #555;
+    box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.4);
+    transform: translateY(-13px) scale3d(1.2, 1.2, 1);
 }
 
 .intro__links a.fa-youtube:hover {

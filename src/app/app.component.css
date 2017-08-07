@@ -38,3 +38,7 @@
 .home.isNav .intro__links {
     display: none;
 }
+
+.home .intro__links a:hover {
+    background-color: white;
+}
