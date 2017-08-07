@@ -55,10 +55,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition-property: transform;
+    transition-property: transform, box-shadow;
     transition-duration: 0.4s;
     transform-origin: 50% 0%;
     z-index: 1;
+    transform: perspective(0px) rotateX(0deg);
 }
 
 .project__imgwrap:hover {
@@ -68,6 +69,7 @@
 .project__imgwrap:hover img {
     transform: perspective(2180px) rotateX(37deg);
     z-index: 9;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, .3);
 }
 
 .project__imgwrap {
