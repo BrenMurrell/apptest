@@ -2,4 +2,17 @@
     <a routerLink="/" routerLinkActive="active">Home</a>
     <a routerLink="/intro" routerLinkActive="active">Intro</a>
 </nav> -->
+<section class="home" [class.isNav]="getNav()">
+
+    <div class="section__inner home__inner">
+        <h1><a routerLink="/">{{title}}</a></h1>
+        <h2>{{subtitle}}</h2>
+        <ul class="intro__links">
+            <li>
+                <a (click)="makeNav()" routerLink="/intro" class="fa fa-caret-right" title="About me"></a>
+
+            </li>
+        </ul>
+    </div>
+</section>
 <router-outlet></router-outlet>
