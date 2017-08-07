@@ -43,14 +43,16 @@ h1 {
 h2 {
     font-size: 60px;
 }
+
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 66px;
-  }
-  h2 {
-    font-size: 40px;
-  }
+    h1 {
+        font-size: 66px;
+    }
+    h2 {
+        font-size: 40px;
+    }
 }
+
 p {
     font-family: 'Raleway', sans-serif;
     margin-top: 0;
@@ -76,13 +78,13 @@ a {
 .home {
     height: 100vh;
     background-color: #333;
-    background-color: #ff8000;
+    background-color: #f75a00;
     color: #fff;
 }
 
 .home .intro__links a {
     text-decoration: none;
-    color: #ff8000;
+    color: #f75a00;
     background-color: #fff;
 }
 
@@ -147,6 +149,6 @@ a {
 }
 
 .competencies {
-    background: #ff8000;
+    background: #f75a00;
     color: white;
 }

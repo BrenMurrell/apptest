@@ -1,45 +1,92 @@
-
 .projects {
-  background-color: #222;
-  color: white;
+    background-color: #222;
+    color: white;
 }
+
 .projects__inner {
-  max-width: 1200px;
+    max-width: 1200px;
 }
+
 .projects__header {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.projects__header h1 { margin-bottom: 0.4em; }
+
+.projects__header h1 {
+    margin-bottom: 0.4em;
+}
+
 .projects__list {
-  display: flex;
-  flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
+
 .project__thumb {
-  flex: 1;
-  margin: 0;
-  margin-bottom: 1em;
-  padding: 1em;
-  box-sizing: border-box;
-  flex-basis: 100%;
+    flex: 1;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-sizing: border-box;
+    flex-basis: 100%;
 }
+
 @media only screen and (min-width: 600px) {
-  .project__thumb {
-    flex-basis: 40%;
-  }
+    .project__thumb {
+        flex-basis: 40%;
+    }
 }
+
 .project__thumb a {
-  text-decoration: none;
-  border-radius: 5px;
-  display: block;
-  color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    color: inherit;
 }
+
 .project__thumb h2 {
-  font-size: 2em;
-  margin-bottom: 0.4em;
+    font-size: 2em;
+    margin-bottom: 0.4em;
 }
+
 .project__thumb img {
-  max-width: 100%;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-  border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transform-origin: 50% 0%;
+    z-index: 1;
+}
+
+.project__imgwrap:hover {
+    background-color: #f75a00;
+}
+
+.project__imgwrap:hover img {
+    transform: perspective(2180px) rotateX(37deg);
+    z-index: 9;
+}
+
+.project__imgwrap {
+    width: 100%;
+    padding-top: 56.25%;
+    background: rgba(255, 255, 255, 0.2);
+    background-color: #f75a00;
+    position: relative;
+    border-radius: 10px;
+}
+
+.project__imgwrap p {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
 }
