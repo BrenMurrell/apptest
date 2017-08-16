@@ -13,7 +13,7 @@
                         </h2>
                         <!-- <div [innerHTML]="post.excerpt.rendered"></div> -->
                     </div>
-                    <div class="bgimg" *ngIf="post.better_featured_image;  else elseBlock" [style.background-image]="'url(' + post.better_featured_image.source_url + ')'" [style.background-size]="'cover'">
+                    <div class="bgimg" *ngIf="post.featured_media_url;  else elseBlock" [style.background-image]="'url(' + post.featured_media_url + ')'" [style.background-size]="'cover'">
                         <div class="bgimg__inner"></div>
                     </div>
                     <ng-template #elseBlock>

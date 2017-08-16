@@ -7,7 +7,7 @@ import { Post } from './post';
 
 @Injectable()
 export class PostsService {
-  private postsUrl = "http://blog.moon.co.nz/wp-json/wp/v2/";
+  private postsUrl = "https://public-api.wordpress.com/wp/v2/sites/blog.moon.co.nz/";
   private headers = new Headers({'Content-Type': 'application/json'});
 
 
