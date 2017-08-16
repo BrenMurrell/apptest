@@ -13,7 +13,7 @@ export class PostsService {
 
   constructor(private http: Http) { }
   getPosts(): Promise<Post[]> {
-    return this.http.get(this.postsUrl + 'posts')
+    return this.http.get(this.postsUrl + 'posts?per_page=12')
       .toPromise()
       .then(response => {
         return response.json()

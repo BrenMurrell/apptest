@@ -16,13 +16,10 @@ export class PostListComponent implements OnInit {
   getPosts() {
     this.postsService.getPosts().then(posts => {
       this.posts = posts;
-      console.log('posts', this.posts);
-
     });
   }
   ngOnInit() {
    this.getPosts(); 
-   console.log('are they there yet?',this.posts);
   }
 
 }
