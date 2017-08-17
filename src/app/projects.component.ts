@@ -12,7 +12,9 @@ import { ProjectService } from './project.service';
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[];
-  selectedProject = Project;
+  project: Project[];
+  isClassOpen: boolean = false;
+  selectedProject = "";
   constructor(
     private ProjectService: ProjectService,
     private router: Router
@@ -30,10 +32,20 @@ export class ProjectsComponent implements OnInit {
 
 
   getProjects(): void {
-    this.ProjectService.getProjects().then(projects => this. projects = projects);
+    this.ProjectService.getProjects().then(projects => this.projects = projects);
   }
-  // gotoDetail(): void {
-  //   this.router.navigate(['/detail', this.selectedProject.id]);
-  // }
+  getProject(id): void {
+    this.ProjectService.getProject(id); //.then(projects => console.log(projects));
+  }
+  
+  selectProject(project, event) {
+      this.router.navigate(['/projects', project.id]);
+      this.selectedProject = project;
+      this.isClassOpen = !this.isClassOpen;
+  }
+    closeOverlay() {
+      this.isClassOpen = !this.isClassOpen;
+
+    }
 
 }

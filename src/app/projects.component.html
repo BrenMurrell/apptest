@@ -5,16 +5,33 @@
             <p>I've worked on a plethora of amazing projects during my time as both a Front End Developer for NV Interactive and as a PHP &amp; WordPress developer for Mogul Limited. Here's a selection of some of my favourite sites...
         </div>
         <div class="projects__list">
-            <div *ngFor="let project  of projects" class="project__thumb">
-                <a href="{{project.url}}" target="_blank">
+            <div *ngFor="let project of projects" class="project__thumb">
+                <a (click)="selectProject(project, $event)">
+                    <!-- <a (click)="isClassOpen = !isClassOpen"> -->
                     <h2>{{project.name}}</h2>
                     <div class="project__imgwrap">
                         <img src='assets/{{project.thumbnail}}' />
-                        <p>Click now to Visit the Site</p>
+                        <p>Read more</p>
                     </div>
                 </a>
             </div>
         </div>
         <p>Watch this space for more information about these projects (and others) coming soon...</p>
+    </div>
+
+
+
+    <div *ngIf="selectedProject" id="project__overlay" [ngClass]="{'open': isClassOpen }" (click)="closeOverlay()" [style.background-image]="'url(' + selectedProject.images + ')'" [style.background-size]="'cover'">
+        <div class="project__images"></div>
+        <div class="project__description">
+            <h2>{{selectedProject.name}}</h2>
+            <div [innerHTML]="selectedProject.description"></div>
+            <p><a href="{{selectedProject.url}}" target="_blank">Visit site</a></p>
+            <ul class="techlist">
+                <li *ngFor="let tag of selectedProject.tags">
+                    {{tag}}
+                </li>
+            </ul>
+        </div>
     </div>
 </section>

@@ -5,7 +5,6 @@ import { PROJECTS } from './projects';
 
 @Injectable()
 export class ProjectService {
-    //getHeroes(): void {} //stub
     getProjects(): Promise<Project[]> {
         return Promise.resolve(PROJECTS);
     }
@@ -19,6 +18,4 @@ export class ProjectService {
         return this.getProjects()
             .then(projects => projects.find(project => project.id === id));
     }
-
-
 }
