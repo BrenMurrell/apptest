@@ -12,7 +12,7 @@ export class AppComponent {
     router.events.forEach((event) => {
       if(event instanceof NavigationStart) {
         this.isHome(event.url) ? this.isNav = false : this.isNav = true;
-        window.scroll(0,0);
+        //window.scroll(0,0);
       }
       // NavigationEnd
       // NavigationCancel

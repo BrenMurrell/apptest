@@ -10,11 +10,13 @@ import { IntroComponent } from './intro.component';
 import { ProjectsComponent } from './projects.component';
 import { PostListComponent } from './post-list/post-list.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'intro',  component: IntroComponent },
   { path: 'home',  component: HomeComponent },
   { path: 'projects',  component: ProjectsComponent },
+  { path: 'projects/:id', component: ProjectsComponent },
   { path: 'posts',  component: PostListComponent }
 ];
 
