@@ -10,8 +10,8 @@
 }
 
 .post {
-    width: 33%;
-    flex-basis: 33%;
+    width: 100%;
+    flex-basis: 100%;
     border: 8px solid white;
     box-sizing: border-box;
     position: relative;
@@ -20,6 +20,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media all and (min-width: 1023px) {
+      width: 33%;
+      flex-basis: 33%;
+    }
 }
 
 .post a {
